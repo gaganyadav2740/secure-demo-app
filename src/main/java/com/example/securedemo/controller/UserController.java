@@ -72,4 +72,10 @@ public class UserController {
         // Calling login service
         return userService.login(email, password);
     }
+    @PostMapping("/login")
+    public User loginagaingagan(@RequestParam String email, @RequestParam String password) {
+
+        // Calling login service
+        return userService.login(email, password);
+    }
 }
