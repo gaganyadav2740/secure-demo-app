@@ -64,4 +64,18 @@ public class UserController {
         // Calling login service
         return userService.login(email, password);
     }
+
+    // API to login user again
+    @PostMapping("/login")
+    public User loginagain(@RequestParam String email, @RequestParam String password) {
+
+        // Calling login service
+        return userService.login(email, password);
+    }
+    @PostMapping("/login")
+    public User loginagaingagan(@RequestParam String email, @RequestParam String password) {
+
+        // Calling login service
+        return userService.login(email, password);
+    }
 }
